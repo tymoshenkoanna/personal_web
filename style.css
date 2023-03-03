@@ -1,0 +1,112 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+#banner {
+	background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.75)),url(Magnolias.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	height: 100vh;
+	}
+
+.banner-text {
+	position: sticky;
+	left: 0;
+	top: 55vh;
+	color: white;
+	padding: 50px;
+	}
+
+.banner-text h1 {
+	color: white;
+	font-family: Helventica, sans-serif;
+	font-size: 70px;
+	}
+
+.banner-text p {
+	color: white;
+	font-family: Helventica, sans-serif;
+	font-size: 50px;
+	}
+
+
+.topnav {
+	height: 50px;
+	position: fixed;
+	right: 0;
+	top: 15px;
+	z-index: 2;
+	}
+
+.topnav a {
+	width: 150px;
+	margin: 0 15px;
+	padding: 20px 20px;
+	color: #D1D0D0;
+	text-decoration: none;
+	font-family: Helventica, sans-serif;
+	}
+
+
+#about {
+	background-color: #FFFFFF;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 100vh;
+	}
+
+.about-img{
+	flex-basis: 50%;
+	}
+
+
+.about-img img {
+	width: 20%;
+	padding: 50px;
+	opacity: 70%;
+	}
+
+#portfolio {
+	background-color: #E8E4E4;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 100vh;
+	}
+
+#contact {
+	background-color: #FFFFFF;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 100vh;
+	}
+
+
+.title-text {
+	left: 0;
+	top: 55vh;
+	padding-bottom: 70px;
+	padding: 50px;
+	}
+
+.title-text h4 {
+	margin: auto;
+	color: black;
+	font-family: Helventica, sans-serif;
+	font-size: 40px;
+	position: relative;
+	z-index: 1;
+	}
+
+
+@media screen and (max-width: 770px){
+	.banner-text h1 {
+	color: white;
+	font-family: Helventica, sans-serif;
+	font-size: 25px;
+		}
+	.banner-text p {
+	color: white;
+	font-family: Helventica, sans-serif;
+	font-size: 15px;
+		}
+	}
