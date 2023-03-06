@@ -3,67 +3,106 @@
 	padding: 0;
 }
 #banner {
-	background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.75)),url(Magnolias.jpg);
+	background: linear-gradient(rgba(0,0,0,0),rgba(33,49,63,0.9)),url(Magnolias.jpg);
 	background-size: cover;
-	background-attachment: fixed;
+	background-position: top;
 	height: 100vh;
 	}
 
 .banner-text {
 	position: sticky;
-	left: 0;
+	text-align: left;
 	top: 55vh;
 	color: white;
-	padding: 50px;
+	padding: 150px;
 	}
 
 .banner-text h1 {
 	color: white;
-	font-family: Helventica, sans-serif;
-	font-size: 70px;
+	font-family: 'Arimo', sans-serif;
+	font-size: 90px;
 	}
 
 .banner-text p {
 	color: white;
-	font-family: Helventica, sans-serif;
+	font-family: 'Arimo', sans-serif;
 	font-size: 50px;
 	}
 
 
-.topnav {
-	height: 50px;
+/*navbar start*/
+
+body {
+	font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+	height: 100%;
+	width: 0;
 	position: fixed;
+	z-index: 1;
+	top: 0;
 	right: 0;
-	top: 15px;
-	z-index: 2;
+	background-color: #1D4368;
+	overflow-x: hidden;
+	transition: 0.2s;
+	padding-top: 60px;
 	}
 
-.topnav a {
-	width: 150px;
-	margin: 0 15px;
-	padding: 20px 20px;
-	color: #D1D0D0;
+.sidebar a {
+	padding: 8px 8px 8px 32px;
 	text-decoration: none;
-	font-family: Helventica, sans-serif;
+	font-size: 25px;
+	color: white;
+	display: block;
+	transition: 0.3s;
 	}
 
+.sidebar a:hover {
+	color: #9DBEC0;
+	}
+
+.sidebar .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+	}
+
+.openbtn {
+	font-size: 30px;
+	cursor: pointer;
+	background-color: none;
+	color: white;
+	padding: 15px 15px;
+	margin: 50px 50px;
+	border: none;
+	}
+
+.openbtn:hover{
+	color: #9DBEC0;
+	}
+
+#main {
+	transition: margin-left .5s;
+	padding: 0px;
+	float: right;
+	}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+	.sidebar {padding-top: 15px;}
+	.sidebar a {font-size: 18px;}
+	}
+
+/*navbar finish*/
 
 #about {
 	background-color: #FFFFFF;
 	background-size: cover;
 	background-attachment: fixed;
 	height: 100vh;
-	}
-
-.about-img{
-	flex-basis: 50%;
-	}
-
-
-.about-img img {
-	width: 20%;
-	padding: 50px;
-	opacity: 70%;
 	}
 
 #portfolio {
@@ -82,10 +121,10 @@
 
 
 .title-text {
-	left: 0;
 	top: 55vh;
 	padding-bottom: 70px;
-	padding: 50px;
+	padding-left: 150px;
+	padding-top: 75px;
 	}
 
 .title-text h4 {
@@ -94,19 +133,6 @@
 	font-family: Helventica, sans-serif;
 	font-size: 40px;
 	position: relative;
-	z-index: 1;
+	z-index: 
 	}
 
-
-@media screen and (max-width: 770px){
-	.banner-text h1 {
-	color: white;
-	font-family: Helventica, sans-serif;
-	font-size: 25px;
-		}
-	.banner-text p {
-	color: white;
-	font-family: Helventica, sans-serif;
-	font-size: 15px;
-		}
-	}
